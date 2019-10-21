@@ -1,2 +1,0 @@
-# Quotes
-Created with CodeSandbox

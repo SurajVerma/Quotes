@@ -1,0 +1,40 @@
+
+
+/*Universal*/
+ul, li,{list-style: none;}
+*, html{font-family: 'Roboto', sans-serif;}
+.padd0{padding: 0;}
+.rad0{border-radius:0;}
+
+
+/*Loader*/
+@keyframes cubes{
+    0%, 10%{opacity: 0;transform: perspective(101px) rotateX(-180deg);}
+    25%, 75%{opacity: 1; transform: perspective(101px) rotateX(0deg)}
+    90%, 100%{opacity: 0; transform: perspective(101px) rotateY(180deg);}
+}
+.overlay{background: #fff;height: 100%;width: 100%;left: 0;top: 0;position: fixed;z-index: 1000;}
+.loader{height: 54px;width: 54px;left: 50%;top: 50%;position: relative;transform: translate(-50%, -50%) rotateZ(45deg);
+    .cube{float: left;height: 50%;width: 50%;position: relative;transform: scale(1.1);}
+    .cube:before{animation:cubes 2.76s linear 0s both infinite running; background-color: #1e1e1e; content: ""; height: 100%;width: 100%; left: 0;top: 0; position: absolute; transform-origin: 100% 100% 0;}
+    .c2{transform: scale(1.1) rotateZ(90deg)}
+    .c3{transform: scale(1.1) rotateZ(180deg)}
+    .c4{transform: scale(1.1) rotateZ(270deg)}
+    .c2:before{animation-delay: .35s}
+    .c3:before{animation-delay:.69s}
+    .c4:before{animation-delay:1.04s}
+}
+
+/*General*/
+.quotes-bg{position: fixed;height: 100%;width: 100%;
+    .quotes-overlay{background:url('../assets/pattern.png'); position: fixed;height: 100%;width: 100%;
+        .quotes-base{position: absolute;margin: auto;left: 0;right: 0;top:0;bottom: 0;max-height: 400px;width: 70%;
+            .quote{line-height: 1.3; position: relative; margin: auto; top: 50%;transform: translateY(-50%);font-size: 60px;color: #fff;text-shadow:#605d99 0 0 7px;
+                .quote-by{font-style: italic;font-size: 20px;display: block;}
+            }
+        }
+        .shuffle{position: absolute;bottom: 50px;margin: auto;left: 0;right: 0;height: 70px;width: 70px;background: #fff;border-radius:50%;line-height: 70px;font-size: 30px;text-align: center;color:#605d99;cursor: pointer;box-shadow:#605d99 0 0 7px;}
+        .info-btn{position: absolute;right: 50px;bottom: 70px;height: 30px;width: 30px;line-height: 30px;background: #fff;color: #605d99;text-align: center;border-radius: 50%;cursor: pointer;font-size: 18px;box-shadow:#605d99 0 0 7px}
+     }
+}
+

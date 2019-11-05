@@ -24,7 +24,7 @@ class User extends React.Component {
     return (
       <div
         className="mx-auto mt-4 text-center p-5"
-        style={{ maxWidth: "300px", minHeight: "250px" }}
+        style={{ maxWidth: "500px", minHeight: "250px" }}
       >
         {isLoading ? loadingMessage : userDetails}
       </div>

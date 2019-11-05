@@ -11,10 +11,10 @@ class User extends React.Component {
     const userDetails = (
       <div>
         <img
-          className="img-thumbnail rounded-circle mx-auto mb-2 shadow-sm"
+          className="img-thumbnail mx-auto mb-2 shadow-sm"
           src={picture}
           alt={picture}
-          style={{ width: "100px", height: "100px" }}
+          style={{ width: "500px"}}
         />        
       </div>
     );

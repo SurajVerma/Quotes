@@ -3,46 +3,33 @@ import PropTypes from "prop-types";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.scss";
+import { faRandom } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class User extends React.Component {
   render() {
     const { picture, isLoading } = this.props;
 
-    const userDetails = (
-      // <div>
-      //   <img
-      //     className="img-thumbnail mx-auto mb-2 shadow-sm"
-      //     src={picture}
-      //     alt={picture}
-      //     style={{ width: "500px"}}
-      //   />        
-      // </div>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="quotes-bg">
+    const userDetails = (                               
+          <div className="quotes-bg" style={{background:`url(${picture})`}}>
             <div className="quotes-overlay">
               <div className="quotes-base text-center">
                 <p className="quote">You only live once, but if you do it right, once is enough.<span className="quote-by">Mae West</span></p>					
               </div>
               <div className="shuffle text-center">
-                <i className="fa fa-random"></i>
+                <FontAwesomeIcon icon={faRandom} />
               </div>
               <div className="info-btn">
                 <i className="fa fa-info"></i>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </div>          
+        </div>      
     );
 
     const loadingMessage = <span className="d-flex m-auto">Loading...</span>;
 
     return (
-      <div
-        className="mx-auto mt-4 text-center p-5"
-        style={{ maxWidth: "500px", minHeight: "250px" }}
-      >
+      <div className="row">
         {isLoading ? loadingMessage : userDetails}
       </div>
     );

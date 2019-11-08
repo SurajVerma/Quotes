@@ -44,5 +44,3 @@ User.propTypes = {
 };
 
 export default User;
-
-//random

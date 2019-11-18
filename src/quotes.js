@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.scss";
-import { faRandom } from "@fortawesome/free-solid-svg-icons";
+import { faRandom, faInfo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class User extends React.Component {
@@ -20,7 +20,7 @@ class User extends React.Component {
                 <FontAwesomeIcon icon={faRandom} />
               </div>
               <div className="info-btn">
-                <i className="fa fa-info"></i>
+                <FontAwesomeIcon icon={faInfo} />
               </div>
             </div>          
         </div>      

@@ -6,7 +6,11 @@ import axios from "axios";
 //   baseURL: "https://api.unsplash.com/photos/random",
 //   responseType: "json"
 // });
+// export default axios.create({
+//   baseURL: "https://jsonplaceholder.typicode.com/photos",
+//   responseType: "json"
+// });
 export default axios.create({
-  baseURL: "https://jsonplaceholder.typicode.com/photos",
+  baseURL: "https://picsum.photos/v2/list",
   responseType: "json"
 });

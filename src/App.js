@@ -1,16 +1,15 @@
 // src/App.js
 import React from "react";
 //import API from "./utils/API";
-import User from "./quotes";
+import QuotesUI from "./quotes";
 
 class App extends React.Component {
-    render() {    
-    
+  render() {
+
     return (
       <div className="container-fluid">
-        <User/>      
-        {/* <button className="btn btn-success mt-5" onClick={this.getPicture}>Next User</button> */}
-      </div>      
+        <QuotesUI />
+      </div>
     );
   }
 
@@ -30,9 +29,9 @@ class App extends React.Component {
   //   this.setState({
   //     ...this.state, ...{isLoading: false, name, avatar, email}
   //   })
-    
+
   // }
-  
+
 }
 
 export default App;

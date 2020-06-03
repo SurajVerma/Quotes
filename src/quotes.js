@@ -40,7 +40,7 @@ class QuotesUI extends React.Component {
     let quoteData = await API.quoteAPI.get("/");
     //quoteData = picData.data.urls.regular;
     //picData = picData.data[0].url
-    console.log(quoteData)
+    //console.log(quoteData)
     let j = Math.floor(Math.random() * quoteData.data.length + 1);
     quoteData = quoteData.data[j];
     // console.log(quoteData.quote);

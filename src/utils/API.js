@@ -8,7 +8,7 @@ import axios from "axios";
 //   headers: { "Access-Control-Allow-Origin": "*" }
 // });
 export const quoteAPI = axios.create({
-  baseURL: "https://type.fit/api/quotes",
+  baseURL: "https://api.bleuflex.com/quotes/read",
   responseType: "json"
 });
 // export const quoteAPI = axios.create({

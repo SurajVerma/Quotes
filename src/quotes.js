@@ -37,15 +37,14 @@ class QuotesUI extends React.Component {
    // console.log(picData);
     //const picture = picData;
 
-    let quoteData = await API.quoteAPI.get("/", {
-      headers: { "Access-Control-Allow-Origin": "*" }
-    });
+    let quoteData = await API.quoteAPI.get("/");
     //quoteData = picData.data.urls.regular;
     //picData = picData.data[0].url
+    console.log(quoteData)
     let j = Math.floor(Math.random() * quoteData.data.length + 1);
     quoteData = quoteData.data[j];
-    // console.log(quoteData.text);
-    // console.log(quoteData.author);
+    // console.log(quoteData.quote);
+    // console.log(quoteData.quote_by);
     //const aaloo = quoteData;
 
     Promise.all([picData, quoteData])
@@ -53,8 +52,8 @@ class QuotesUI extends React.Component {
         this.setState({
           isLoading: false,
           picture: picData,
-          quotetext: quoteData.text,
-          quoteauthor: quoteData.author
+          quotetext: quoteData.quote,
+          quoteauthor: quoteData.quote_by
         })
       });
 

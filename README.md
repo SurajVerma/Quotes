@@ -1,4 +1,4 @@
-A simple Quotes shuffling PWA based on ReactJS.
+A simple Quotes shuffling PWA based on ReactJS.  
 I am using Bleuflex's free quotes API https://api.bleuflex.com/quotes/read for quotes.  
 &
 https://picsum.photos/ for background images.
